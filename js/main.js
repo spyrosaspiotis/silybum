@@ -283,36 +283,6 @@ if ("IntersectionObserver" in window) {
   revealElements.forEach((element) => element.classList.add("is-visible"));
 }
 
-const collectionSelect = document.querySelector("[data-collection-select]");
-const collectionButtons = document.querySelectorAll("[data-collection]");
-
-collectionButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    if (!collectionSelect) return;
-    collectionSelect.value = button.dataset.collection || "";
-  });
-});
-
-const eventDate = document.querySelector("#event-date");
-
-if (eventDate) {
-  const today = new Date();
-  const localToday = new Date(today.getTime() - today.getTimezoneOffset() * 60_000);
-  eventDate.min = localToday.toISOString().split("T")[0];
-}
-
-const contactForm = document.querySelector("[data-contact-form]");
-const formStatus = document.querySelector("[data-form-status]");
-
-contactForm?.addEventListener("submit", (event) => {
-  event.preventDefault();
-
-  if (formStatus) {
-    formStatus.dataset.submitted = "true";
-    formStatus.textContent = translate("form.success");
-  }
-});
-
 document.querySelectorAll("[data-year]").forEach((element) => {
   element.textContent = new Date().getFullYear();
 });

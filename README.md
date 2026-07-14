@@ -7,17 +7,17 @@ First working homepage for **SILYBUM — Golden Moments. Elevated.**
 The page currently includes:
 
 - cinematic hero area
-- Easy Collection — 1.290€
-- Comfort Collection — 2.490€
-- Luxury Collection — 3.990€
-- shared package benefits
+- Easy Collection
+- Comfort Collection
+- Luxury Collection
+- illustrated concept inventory for each collection
 - Premium Real Touch Florals
 - Why Silybum
-- notes and pricing conditions
-- contact-interest form demo
+- pre-launch information notice with no public pricing
+- clear non-commercial pre-launch notice
 - responsive desktop, tablet and mobile layouts
 
-No booking, payment, invented services or extra collections have been added.
+No enquiry form, booking, payment, commercial offer, invented services or extra collections have been added.
 
 ## Preview in VS Code
 
@@ -36,10 +36,10 @@ No booking, payment, invented services or extra collections have been added.
 
 Place the final approved images in `assets/images` using these exact names:
 
-- `hero.webp`
-- `easy.webp`
-- `comfort.webp`
-- `luxury.webp`
+- `hero.jpg`
+- `easy.jpg`
+- `comfort.jpg`
+- `luxury.jpg`
 
 Until those files are added, the site displays intentional luxury-colour placeholders instead of broken images.
 
